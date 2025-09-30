@@ -33,7 +33,6 @@ export default async function ConfirmationPage(props: Props) {
             details.
           </Typography>
 
-          {/* order details */}
           <Stack
             spacing={1}
             sx={{ border: "1px solid grey", padding: "0.7rem" }}
@@ -56,7 +55,6 @@ export default async function ConfirmationPage(props: Props) {
             </Stack>
           </Stack>
 
-          {/* products */}
           <Stack
             spacing={1}
             sx={{ border: "1px solid grey", padding: "0.7rem" }}

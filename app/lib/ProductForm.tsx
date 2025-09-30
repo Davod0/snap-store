@@ -92,7 +92,7 @@ export default function ProductForm({ product, children }: Props) {
           },
         }}
       />
-      <Button sx={{ mb: { xs: 8, md: 33 } }} variant="contained" type="submit">
+      <Button sx={{ mb: { xs: 8, md: 33 }, backgroundColor: "#008080" }} variant="contained" type="submit">
         {children}
       </Button>
     </Stack>
