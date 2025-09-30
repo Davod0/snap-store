@@ -36,7 +36,6 @@ export default function EditProductButton({ product, children }: Props) {
     <IconButton
       LinkComponent={Link}
       href={`../admin/product/${product.articleNumber}/`}
-      data-cy="admin-edit-product"
     >
       {children}
     </IconButton>

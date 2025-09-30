@@ -21,7 +21,6 @@ export default function IncreaseCartItemButton({
       aria-label="add"
       sx={{ color }}
       onClick={() => increaseCartItem(cartItem)}
-      data-cy="increase-quantity-button"
     >
       <AddIcon fontSize="small" />
     </IconButton>

@@ -36,7 +36,6 @@ export default function AddItemToCart({ product, children, ...rest }: Props) {
           addToCart(product);
           setOpenSnackbar(true);
         }}
-        data-cy="product-buy-button"
       >
         {children}
       </Button>
@@ -51,7 +50,7 @@ export default function AddItemToCart({ product, children, ...rest }: Props) {
           variant="filled"
           sx={{ width: "100%", backgroundColor: "#008080" }}
         >
-          <span data-cy="added-to-cart-toast">
+          <span>
             {product.title + " has been added to your cart."}
           </span>
         </Alert>

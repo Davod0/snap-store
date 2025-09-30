@@ -58,14 +58,12 @@ export default async function ProductPage(props: Props) {
               variant="h6"
               component="div"
               sx={{ color: "text.secondary" }}
-              data-cy="product-title"
             >
               {product.title}
             </Typography>
             <Typography
               variant="body2"
               sx={{ color: "text.secondary" }}
-              data-cy="product-description"
             >
               {product.description}
             </Typography>
@@ -91,7 +89,7 @@ export default async function ProductPage(props: Props) {
                 gap: "1rem",
               }}
             >
-              <span data-cy="product-price">
+              <span>
                 {product.price.toFixed(2) + " kr"}
               </span>
               <CartIcon />

@@ -8,13 +8,13 @@ import { Inter } from "next/font/google";
 import CartProvider from "./lib/CartProvider";
 import Header from "./lib/Header";
 import { LayoutProps } from "./types";
+import Footer from "./lib/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-/* Beskriv din hemsida för sökmotorerna */
 export const metadata: Metadata = {
   title: "Snap Store",
-  description: "Dina favoritprodukter online till en bra pris...",
+  description: "Your favorite products online at a good price.",
 };
 
 export default function RootLayout({ children }: LayoutProps) {
@@ -33,11 +33,7 @@ export default function RootLayout({ children }: LayoutProps) {
               }}
             >
               {children}
-              <footer>
-                <center>
-                  <p>© Coding Squad 2024</p>
-                </center>
-              </footer>
+              <Footer />
             </Box>
           </Container>
         </CartProvider>

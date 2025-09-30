@@ -17,7 +17,6 @@ export default function AdminProductCard({ product }: Props) {
         justifyContent: "space-between",
         height: "100%",
       }}
-      data-cy="product"
     >
       <CardMedia
         component="img"
@@ -32,28 +31,24 @@ export default function AdminProductCard({ product }: Props) {
           variant="h6"
           component="div"
           sx={{ color: "text.secondary" }}
-          data-cy="product-title"
         >
           {product.title}
         </Typography>
         <Typography
           variant="body2"
           sx={{ color: "text.secondary" }}
-          data-cy="product-description"
         >
           {product.description}
         </Typography>{" "}
         <Typography
           variant="body2"
           sx={{ color: "text.secondary" }}
-          data-cy="product-id"
         >
           {product.articleNumber}
         </Typography>
         <Typography
           variant="body2"
           sx={{ color: "text.secondary" }}
-          data-cy="product-price"
         >
           {product.price.toFixed(2)} kr
         </Typography>

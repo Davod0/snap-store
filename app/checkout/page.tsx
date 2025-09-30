@@ -63,7 +63,6 @@ export default function CheckoutPage() {
                   <ProductCartView key={p.id} product={p} buttonColor="black" />
                 ))}
                 <Stack
-                  data-cy="total-price"
                   sx={{ bgcolor: "#e8dcc4", margin: 2, padding: 1 }}
                 >
                   Total: {totalPrice.toFixed(2)} kr
@@ -78,18 +77,11 @@ export default function CheckoutPage() {
             component="form"
             gap={3}
             onSubmit={form.handleSubmit(registerCheckout)}
-            data-cy="customer-form"
           >
             <Typography variant="h2" fontSize={23} fontWeight="bold">
               Delivery Address
             </Typography>
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-name" },
-                  formHelperText: { "data-cy": "customer-name-error" },
-                } as any
-              }
               label="Name"
               autoComplete="name"
               {...form.register("firstName")}
@@ -104,12 +96,6 @@ export default function CheckoutPage() {
               helperText={form.formState.errors.lastName?.message}
             />
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-email" },
-                  formHelperText: { "data-cy": "customer-email-error" },
-                } as any
-              }
               label="Email"
               autoComplete="email"
               {...form.register("email")}
@@ -117,12 +103,6 @@ export default function CheckoutPage() {
               helperText={form.formState.errors.email?.message}
             />
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-phone" },
-                  formHelperText: { "data-cy": "customer-phone-error" },
-                } as any
-              }
               type="number"
               label="Phone"
               autoComplete="tel"
@@ -131,12 +111,6 @@ export default function CheckoutPage() {
               helperText={form.formState.errors.phoneNr?.message}
             />
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-address" },
-                  formHelperText: { "data-cy": "customer-address-error" },
-                } as any
-              }
               label="Address"
               autoComplete="street-address"
               {...form.register("address")}
@@ -144,12 +118,6 @@ export default function CheckoutPage() {
               helperText={form.formState.errors.address?.message}
             />
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-zipcode" },
-                  formHelperText: { "data-cy": "customer-zipcode-error" },
-                } as any
-              }
               type="number"
               label="ZipCode"
               autoComplete="postal-code"
@@ -158,12 +126,6 @@ export default function CheckoutPage() {
               helperText={form.formState.errors.zipCode?.message}
             />
             <TextField
-              slotProps={
-                {
-                  htmlInput: { "data-cy": "customer-city" },
-                  formHelperText: { "data-cy": "customer-city-error" },
-                } as any
-              }
               label="State"
               autoComplete="address-level2"
               {...form.register("state")}

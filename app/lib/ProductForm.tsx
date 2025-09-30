@@ -49,7 +49,6 @@ export default function ProductForm({ product, children }: Props) {
           ? form.handleSubmit(editProduct)
           : form.handleSubmit(addNewProduct)
       }
-      data-cy="product-form"
     >
       <TextField
         variant="standard"
@@ -58,12 +57,6 @@ export default function ProductForm({ product, children }: Props) {
         {...form.register("title")}
         error={!!form.formState.errors.title}
         helperText={form.formState.errors.title?.message}
-        slotProps={
-          {
-            htmlInput: { "data-cy": "product-title" },
-            formHelperText: { "data-cy": "product-title-error" },
-          } as any
-        }
       />
       <TextField
         variant="standard"
@@ -72,12 +65,6 @@ export default function ProductForm({ product, children }: Props) {
         {...form.register("description")}
         error={!!form.formState.errors.description}
         helperText={form.formState.errors.description?.message}
-        slotProps={
-          {
-            htmlInput: { "data-cy": "product-description" },
-            formHelperText: { "data-cy": "product-description-error" },
-          } as any
-        }
       />
       <TextField
         variant="standard"
@@ -86,12 +73,6 @@ export default function ProductForm({ product, children }: Props) {
         {...form.register("image")}
         error={!!form.formState.errors.image}
         helperText={form.formState.errors.image?.message}
-        slotProps={
-          {
-            htmlInput: { "data-cy": "product-image" },
-            formHelperText: { "data-cy": "product-image-error" },
-          } as any
-        }
       />
       <TextField
         variant="standard"
@@ -110,17 +91,8 @@ export default function ProductForm({ product, children }: Props) {
             MozAppearance: "textfield",
           },
         }}
-        slotProps={
-          {
-            htmlInput: {
-              "data-cy": "product-price",
-              step: "any",
-            },
-            formHelperText: { "data-cy": "product-price-error" },
-          } as any
-        }
       />
-      <Button variant="contained" type="submit">
+      <Button sx={{ mb: { xs: 8, md: 33 } }} variant="contained" type="submit">
         {children}
       </Button>
     </Stack>

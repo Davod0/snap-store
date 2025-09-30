@@ -20,7 +20,6 @@ export default function DecreaseCartItemButton({
       aria-label="remove"
       sx={{ color }}
       onClick={() => decreaseCartItem(cartItem)}
-      data-cy="decrease-quantity-button"
     >
       <RemoveIcon fontSize="small" />
     </IconButton>

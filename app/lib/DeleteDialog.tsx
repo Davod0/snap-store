@@ -35,7 +35,6 @@ export default function DeleteDialog({ product, open, handleClose }: Props) {
           }}
           autoFocus
           variant="contained"
-          data-cy="confirm-delete-button"
         >
           Delete
         </Button>

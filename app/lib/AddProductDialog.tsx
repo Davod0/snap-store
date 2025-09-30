@@ -46,7 +46,6 @@ export default function AddProductDialog({ open, handleClose }: Props) {
           gap={2}
           component="form"
           onSubmit={form.handleSubmit(addNewProduct)}
-          data-cy="product-form"
         >
           <TextField
             variant="standard"

@@ -20,7 +20,6 @@ export default function DeleteButtonWithConfirmation({ product }: Props) {
       <IconButton
         aria-label="delete"
         onClick={handleClickOpen}
-        data-cy="admin-remove-product"
       >
         <DeleteIcon />
       </IconButton>

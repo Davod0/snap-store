@@ -16,7 +16,6 @@ export default function ProductCard(props: Props) {
         justifyContent: "space-between",
         height: "100%",
       }}
-      data-cy="product"
     >
       <Link
         href={`../product/${props.product.articleNumber}/${encodeURIComponent(
@@ -37,14 +36,12 @@ export default function ProductCard(props: Props) {
             variant="h6"
             component="div"
             sx={{ color: "text.secondary" }}
-            data-cy="product-title"
           >
             {props.product.title}
           </Typography>
           <Typography
             variant="body2"
             sx={{ color: "text.secondary" }}
-            data-cy="product-description"
           >
             {props.product.description}
           </Typography>
@@ -61,7 +58,7 @@ export default function ProductCard(props: Props) {
           justifyContent: "space-between",
         }}
       >
-        <span data-cy="product-price">
+        <span>
           {props.product.price.toFixed(2) + " kr"}
         </span>
         <CartIcon />

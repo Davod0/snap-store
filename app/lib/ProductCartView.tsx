@@ -21,7 +21,6 @@ export default function ProductCartView({
       direction="row"
       sx={{ borderBottom: "1px solid black" }}
       margin={0.5}
-      data-cy="cart-item"
     >
       {/* produkt bild */}
       <Link
@@ -45,7 +44,6 @@ export default function ProductCartView({
           direction="row"
           alignItems="center"
           justifyContent="space-between"
-          data-cy="product-title"
         >
           <Typography variant="body2" sx={{ paddingLeft: "0.3rem" }}>
             {product.title}
@@ -57,10 +55,9 @@ export default function ProductCartView({
           direction="row"
           justifyContent="space-between"
           alignItems="center"
-          data-cy="product-price"
         >
           {/* - + och antal */}
-          <Stack direction="row" alignItems="center" data-cy="product-quantity">
+          <Stack direction="row" alignItems="center">
             <DecreaseCartItemButton cartItem={product} color={buttonColor} />
             <Typography>{product.quantity}</Typography>
             <IncreaseCartItemButton cartItem={product} color={buttonColor} />
