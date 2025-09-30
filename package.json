@@ -1,0 +1,43 @@
+{
+  "name": "snap-store",
+  "description": "“A full-stack web application for online shopping.",
+  "scripts": {
+    "dev": "next dev --port 5173",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@hookform/resolvers": "^3.9.0",
+    "@mui/icons-material": "^6.1.0",
+    "@mui/material": "^6.1.0",
+    "@mui/material-nextjs": "^6.0.2",
+    "@prisma/client": "^5.19.1",
+    "font-awesome": "^4.7.0",
+    "mongodb": "^6.8.1",
+    "next": "14.1.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "yup": "^1.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.1",
+    "prisma": "^5.19.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
