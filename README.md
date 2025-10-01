@@ -1,4 +1,4 @@
-## Codelibris
+## Snap Store
 
 Snap Store is a web application built with Next.js, TypeScript, Prisma, MongoDB and MUI. It enables users to browse and order electronic products. This project was created purely for practice purposes and is not a real online store. A live preview of the application is hosted on Vercel.
 
